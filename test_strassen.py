@@ -11,7 +11,7 @@ class MyTestCase(unittest.TestCase):
 
         x1 = np.random.random((4, 4))
         x2 = np.random.random((4, 4))
-        # nie wiem czemu działa, ale działa, pzdr srd elo
+        # sprawdza czy błąd jest w akceptowalnej granicy
         self.assertTrue(np.allclose(strassen(x1, x2), x1.dot(x2), rtol=1e-05, atol=1e-08, equal_nan=False))
 
 

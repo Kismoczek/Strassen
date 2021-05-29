@@ -62,7 +62,6 @@ if __name__ == "__main__":
 
     # sprawdzenie błędów
     print(matrix_mul - x1.dot(x2))
-    # ez
 
     # porówananie czasów wykonywania
     start = time.time()
